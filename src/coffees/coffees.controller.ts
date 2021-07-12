@@ -28,7 +28,7 @@ export class CoffeesController {
   }
 
   @Patch(':id')
-  update(@Param('id') @Body() id, body) {
+  update(@Param('id') id, @Body() body) {
     return `Update #${id} as ${body}`;
   }
 
