@@ -1,3 +1,4 @@
+import { CoffeesService } from './coffees.service';
 import {
   Body,
   Controller,
@@ -11,6 +12,8 @@ import {
 
 @Controller('coffees')
 export class CoffeesController {
+  constructor(private readonly coffeesService: CoffeesService) {}
+
   @Get()
   findAll(@Res() response) {
     response.status(201).send('Get all coffees');
