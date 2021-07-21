@@ -8,7 +8,7 @@ export class CoffeesService {
       id: 1,
       name: 'new coffee',
       brand: 'Starbucks',
-      flavour: 'bitter',
+      flavour: ['bitter'],
     },
   ];
 
